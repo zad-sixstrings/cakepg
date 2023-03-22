@@ -7,7 +7,7 @@ I made this bot because I couldn't find any that suited our needs. The existing 
 
 Use it, tweak it, translate it, have fun !
 
-### How it works
+### What it does
 It's very simple and basic. It lets people roll dice and manage their character sheets, which only have few data (name, race, class, inventory, gold). The character sheets are stored locally in a JSON file. It is aimed at small groups of people. Consider using a proper database for bigger parties.
 
 The program requires a '.env' file as follows :
@@ -15,6 +15,5 @@ The program requires a '.env' file as follows :
 DISCORD_TOKEN=Your bot application token goes here
 DISCORD_GUILD=The name of your server goes here
 ```
-
 
 **Enjoy !**
