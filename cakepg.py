@@ -145,7 +145,7 @@ async def delchar(ctx, name: str):
         characters = json.load(f)
     
     if name in characters:
-        message = await ctx.send(f"Êtes-vous sûr de vouloir gg-ez-win le personnage **{name}** ? Réagissez avec ✅ pour confirmer ou ❌ pour annuler.")
+        message = await ctx.send(f"Êtes-vous sûr de vouloir yeet **{name}** ? Réagissez avec ✅ pour confirmer ou ❌ pour annuler.")
         await message.add_reaction('✅')
         await message.add_reaction('❌')
         
@@ -155,7 +155,7 @@ async def delchar(ctx, name: str):
         try:
             reaction, user = await client.wait_for('reaction_add', timeout=30.0, check=check)
         except asyncio.TimeoutError:
-            await ctx.send(f"Vous n'avez pas réagi à temps. La suppression du personnage **{name}** a été annulée. Are you from Bern ou quoi?")
+            await ctx.send(f"Vous n'avez pas réagi à temps. La suppression du personnage **{name}** a été annulée. Même les dieux se sont endormis.")
         else:
             if reaction.emoji == '✅':
                 del characters[name]
@@ -218,7 +218,7 @@ async def loot(ctx, name, *item):
     
     # Check if item contains any special characters or accented letters
     if re.search('[^A-Za-z0-9\s]+', item):
-        await ctx.send('Désolé, les lettres accentuées ou les caractères spéciaux ne sont pas autorisés.')
+        await ctx.send('Désolé, les lettres accentuées, les runes maudites et les caractères spéciaux ne sont pas autorisés.')
         return
     
     with open("characters.json", "r+") as f:
