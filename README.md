@@ -13,8 +13,7 @@ It's very simple and basic. It lets people roll dice and manage their character 
 
 ### Commands
 Here's a list of the commands to use with the bot :
-```
-- $char <name> | Display character sheet
+- $char \<name\> | Display character sheet
 - $newchar | Create new character sheet
 - $delchar <name> | Delete character sheet
 - $editchar <name>| Edit existring character sheet
@@ -24,7 +23,6 @@ Here's a list of the commands to use with the bot :
 - $loot <name> [item] | Add item to character inventory
 - $unloot <name> [item] | Delete item from character inventory
 - $help | Display available commands
-```
 
 ### Use a .env file !
 The program requires a '.env' file as follows :
