@@ -23,7 +23,7 @@ description = '''Un bot pour gérer du JDR simple dans les channels Discord'''
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
-activity = discord.Game(name="v2.1 - $help")
+activity = discord.Game(name="v1.0 - $help")
 
 client = commands.Bot(command_prefix='$', description=description, activity=activity, intents=intents, help_command=None)
 
