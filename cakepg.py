@@ -4,7 +4,7 @@
 #                                       #
 # The bot for your Discord RPG sessions #
 #                                       #
-#                     By toxxiczad#7302 #
+#                     By zad_sixstrings #
 # v1.0                                  #
 #########################################
 
