@@ -12,19 +12,19 @@ It's very simple. It lets people roll dice and manage their character sheets, wh
 
 ### Commands
 Here's a list of the commands to use with the bot :
-- $char \<name\> | Display character sheet
+- $char (name) | Display character sheet
 - $newchar | Create new character sheet
-- $delchar <name> | Delete character sheet
-- $editchar <name>| Edit existring character sheet
-- $roll <NdN> | Roll dice (NdN format)
-- $ding <name> | Level-up a character
-- $gold <name> [amount] | Add gold to a character
-- $loot <name> [item] | Add item to character inventory
-- $unloot <name> [item] | Delete item from character inventory
+- $delchar (name) | Delete character sheet
+- $editchar (name)| Edit existring character sheet
+- $roll (NdN) | Roll dice (NdN format)
+- $ding (name) | Level-up a character
+- $gold (name) (amount) | Add gold to a character
+- $loot (name) (item) | Add item to character inventory
+- $unloot (name) (item) | Delete item from character inventory
 - $help | Display available commands
 
 ### Installation & Usage
-- Download latest version
+- Download [latest version](https://github.com/zad-sixstrings/cakepg/releases/tag/1.0)
 - Extract files where you want
 - Edit ".env-template" with the appropriate information and rename it ".env"
 - Run cakepg.py
