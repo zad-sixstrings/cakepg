@@ -1,4 +1,5 @@
-# CakePG![ezgif-5-df3b4075c4](https://github.com/zad-sixstrings/cakepg/assets/14813374/aaf7cc9d-a526-416a-9c9c-16449ac2a9cd)
+![ezgif-5-df3b4075c4](https://github.com/zad-sixstrings/cakepg/assets/14813374/aaf7cc9d-a526-416a-9c9c-16449ac2a9cd)
+# CakePG
 ## Discord bot for RPG sessions
 
 This is a bot I created for a francophone community having spontaneous RPG sessions in voice chat from time to time. **The bot writes commands outputs in french** but the code is commented in english. I might upload an english version in the future, but this is not a priority at the moment.
