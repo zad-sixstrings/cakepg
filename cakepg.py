@@ -5,7 +5,7 @@
 # The bot for your Discord RPG sessions #
 #                                       #
 #                     By zad_sixstrings #
-# v1.0                                  #
+# v1.1                                  #
 #########################################
 
 import random
@@ -23,7 +23,7 @@ description = '''Un bot pour gérer du JDR simple dans les channels Discord'''
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
-activity = discord.Game(name="v1.0 - $help")
+activity = discord.Game(name="v1.1 - $help")
 
 client = commands.Bot(command_prefix='$', description=description, activity=activity, intents=intents, help_command=None)
 
@@ -50,7 +50,7 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 # Command to set the Game Master
-@client.command(brief='Définir un utilisateur comme maître de jeu.')
+@client.command(brief='Définir un utilisateur comme maître de jeu. *Le MJ doit avoir une feuille de personnage au préalable.*')
 async def setgm(ctx, user: discord.User):
     with open('gm.json', 'w') as f:
         json.dump({'gm_id': user.id}, f, indent=4)
