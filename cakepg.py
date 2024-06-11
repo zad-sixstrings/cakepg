@@ -77,6 +77,31 @@ async def char(ctx, name):
         else:
             await ctx.send(f"**{name}** n'existe pas (et c'est peut-être mieux ainsi).")
 
+# Command to list all saved characters
+@client.command(brief='Afficher la liste de tous les personnages.')
+async def chars(ctx):
+    with open("characters.json", "r") as f:
+        characters = json.load(f)
+        
+        if not characters:
+            await ctx.send("Il n'y a aucun personnage enregistré.")
+            return
+        
+        embed = discord.Embed(title='Liste des personnages', description='Voici la liste de tous les personnages enregistrés:')
+        
+        for name, details in characters.items():
+            inventory_str = ", ".join(details["inventory"]) or "Aucun objet dans l'inventaire"
+            char_str = f"""
+            :troll: - {details["race"]}
+            :crossed_swords: - {details["class"]}
+            :military_medal: - {details["level"]}
+            :handbag: - {inventory_str}
+            :coin: - {details["gold"]}
+            """
+            embed.add_field(name=name, value=char_str, inline=False)
+        
+        await ctx.send(embed=embed)
+
 # Command to create a character sheet
 @client.command(brief='Créer une feuille de personnage.')
 async def newchar(ctx):
