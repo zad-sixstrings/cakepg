@@ -50,7 +50,7 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 # Command to set the Game Master
-@client.command(brief='Définir un utilisateur comme maître de jeu. *Le MJ doit avoir une feuille de personnage au préalable.*')
+@client.command(brief='Définir un utilisateur comme maître de jeu.')
 async def setgm(ctx, user: discord.User):
     with open('gm.json', 'w') as f:
         json.dump({'gm_id': user.id}, f, indent=4)
